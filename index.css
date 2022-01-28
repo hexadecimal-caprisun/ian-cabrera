@@ -86,12 +86,12 @@ img {
 }
 
 ul{
-  display: inline-block;
+  display: inline-flex;
   list-style-type: none;
 }
 
 li{
-display: inline-block;
+display:inline-flex;
 }
 
 a#contact{
