@@ -27,7 +27,9 @@ body{
   padding: 0;
   margin:0;
   overflow-x: hidden;
+  position: fixed;
 }
+
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 15vw;
