@@ -22,6 +22,7 @@ html {
   background-image: linear-gradient(#5f9da0, white);
   background-repeat: no-repeat;
   overflow-x: hidden;
+  position: absolute;
 }
 
 body{
