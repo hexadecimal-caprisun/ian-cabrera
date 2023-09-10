@@ -21,8 +21,6 @@
 html {
   background-image: linear-gradient(#5f9da0, white);
   background-repeat: no-repeat;
-  overflow-x: hidden;
-  position: absolute;
 }
 
 body{
@@ -67,6 +65,7 @@ p {
   margin-top: 30px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  overflow-x: hidden;
 }
 
 img {
@@ -98,11 +97,12 @@ display:inline-flex;
 }
 
 a#contact{
-  font-size: 30pt;
+  font-size: 3vi;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: black;
-  margin-inline: 20vw;
+  margin-inline-start: 18vw;
+  margin-right: 25vw;
 }
 
 a#contact:hover{
