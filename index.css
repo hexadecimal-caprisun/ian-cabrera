@@ -49,7 +49,7 @@ p {
 }
 
 .container {
-  width: 48%;
+  width: 48vw;
   height: auto;
   background-color: #93c5c7;
   border-radius: 15px;
