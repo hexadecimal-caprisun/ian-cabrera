@@ -49,13 +49,14 @@ p {
 }
 
 .container {
-  width: 48vw;
+  width: 45vw;
   height: auto;
   background-color: #93c5c7;
   border-radius: 15px;
   margin-left: 20px;
   display: inline-block;
   margin-top: 4vh;
+  margin-inline-start: 3vw;
 }
 
 .contact-container{
