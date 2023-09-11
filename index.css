@@ -26,6 +26,7 @@ html {
 body{
   padding: 0;
   margin:0;
+  position: sticky;
 }
 
 h1 {
@@ -55,7 +56,7 @@ p {
   border-radius: 15px;
   margin-left: 20px;
   display: inline-block;
-  margin-top: 4vh;
+  margin-bottom: 4vh;
   margin-inline-start: 3vw;
 }
 
@@ -111,4 +112,37 @@ a#contact:hover{
   transition: ease-in-out 200ms;
   color:white;
 }
+
+a#contact:visited{
+  color: white;
+}
+
+hr{
+  width: 70vw;
+  color: black;
+  border-style: solid;
+}
+
+table, th, td{
+  width: 100%;
+  border: 1px solid black;
+  border-style: groove;
+  border-collapse: collapse;
+}
+
+th{
+  font-size: 23pt;
+  font-family: "poppins", sans-serif;
+}
+
+td{
+  font-size: 18pt;
+  font-family: "poppins", sans-serif;
+}
+
+.column{
+  width: 50%;
+  text-align: center;
+}
+
 
