@@ -26,7 +26,6 @@ html {
 body{
   padding: 0;
   margin:0;
-  position: sticky;
 }
 
 h1 {
@@ -69,7 +68,22 @@ p {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   overflow-x: hidden;
+  text-align: center;
 }
+
+.nav-container{
+  width: 100%;
+  height: auto;
+  background-color: #226c70;
+  display: inline-block;
+  top: 0;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: sticky;
+  overflow-x: hidden;
+}
+
 
 img {
   margin-top: 40px;
@@ -104,8 +118,8 @@ a#contact{
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: black;
-  margin-inline-start: 18vw;
-  margin-right: 25vw;
+  text-align:center;
+
 }
 
 a#contact:hover{
@@ -145,4 +159,16 @@ td{
   text-align: center;
 }
 
+#navtext{
+  font-size: 3vi;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  margin-inline-start: 18vw;
+  margin-right: 25vw;
+}
 
+a#navtext:hover{
+  transition: ease-in-out 200ms;
+  color:white;
+}
