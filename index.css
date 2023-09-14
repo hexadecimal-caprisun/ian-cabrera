@@ -118,8 +118,8 @@ a#contact{
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: black;
-  text-align:center;
-
+  margin-inline-start: 18vw;
+  margin-inline-end: 18vw;
 }
 
 a#contact:hover{
@@ -165,7 +165,7 @@ td{
   font-family: "Poppins", sans-serif;
   color: black;
   margin-inline-start: 18vw;
-  margin-right: 25vw;
+  margin-inline-end: 18vw;
 }
 
 a#navtext:hover{
