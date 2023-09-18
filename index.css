@@ -48,7 +48,7 @@ p {
   font-size: 18pt;
 }
 
-.container {
+.container {   /*The project containers*/
   width: 45vw;
   height: auto;
   background-color: #93c5c7;
@@ -59,7 +59,7 @@ p {
   margin-inline-start: 3vw;
 }
 
-.contact-container{
+.contact-container{ /*The footer container for contact*/
   width: 100%;
   height: auto;
   background-color: #226c70;
@@ -71,7 +71,7 @@ p {
   text-align: center;
 }
 
-.nav-container{
+.nav-container{ /*The top container for navigation*/
   width: 100%;
   height: auto;
   background-color: #226c70;
@@ -113,7 +113,7 @@ li{
 display:inline-flex;
 }
 
-a#contact{
+a#contact{  /*The contact link style stuff*/
   font-size: 3vi;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
@@ -122,12 +122,12 @@ a#contact{
   margin-inline-end: 18vw;
 }
 
-a#contact:hover{
+a#contact:hover{ /*Change text color on hover*/
   transition: ease-in-out 200ms;
   color:white;
 }
 
-a#contact:visited{
+a#contact:visited{ /*Change text color after visited*/
   color: white;
 }
 
@@ -168,7 +168,7 @@ td{
   margin-inline-end: 18vw;
 }
 
-a#navtext:hover{
+a#navtext:hover{ /*Change text color on hover*/
   transition: ease-in-out 200ms;
   color:white;
 }
