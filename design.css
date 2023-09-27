@@ -22,7 +22,6 @@ html {
   background-image: linear-gradient(#5f9da0, white);
   background-repeat: no-repeat;
   scroll-behavior: smooth;
-  
 }
 
 body{
@@ -161,16 +160,37 @@ td{
   text-align: center;
 }
 
-#navtext{
+#navtext3{
   font-size: 3vi;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: black;
-  margin-inline-start: 18vw;
-  margin-inline-end: 18vw;
+  margin-inline-start: 9.5vw;
+  margin-inline-end: 9.5vw;
+}
+
+#navtext2{
+  font-size: 3vi;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  margin-inline-start: 17vw;
+  margin-inline-end: 17vw;
 }
 
 a#navtext:hover{ /*Change text color on hover*/
   transition: ease-in-out 200ms;
   color:white;
+}
+
+.wider{
+  width: 60%;
+}
+
+.smaller{
+  width: 40%;
+}
+
+.special{
+  list-style-type: disc;
 }
