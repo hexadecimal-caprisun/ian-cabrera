@@ -194,3 +194,37 @@ a#navtext:hover{ /*Change text color on hover*/
 .special{
   list-style-type: disc;
 }
+
+#accepted{
+background-color: greenyellow;
+}
+
+#pbau{
+  color: white;
+  background-color: navy;
+}
+
+#erau{
+  color: #FFC423;
+  background-color: #00549F;
+}
+
+#ucf{
+  background-color: #B7A369;
+  color: black;
+}
+
+#mtu{
+  background-color: #ffcd00;
+  color:black;
+}
+
+#tabel{
+  width: 20vw;
+  height: 40vh;
+}
+
+ul.special{
+  all: initial;
+  font-family: "Poppins", sans-serif;
+}
