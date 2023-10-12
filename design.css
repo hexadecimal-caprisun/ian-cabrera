@@ -189,6 +189,7 @@ a#navtext:hover{ /*Change text color on hover*/
 
 .smaller{
   width: 40%;
+  vertical-align:top;
 }
 
 .special{
@@ -217,6 +218,11 @@ background-color: greenyellow;
 #mtu{
   background-color: #ffcd00;
   color:black;
+}
+
+#rmu{
+  color: #14234B;
+  background-color: #A6192E;
 }
 
 #tabel{
