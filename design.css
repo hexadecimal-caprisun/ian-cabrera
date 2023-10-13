@@ -114,6 +114,15 @@ li{
 display:inline-flex;
 }
 
+#navtext2{
+  font-size: 3vi;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  margin-inline-start: 17vw;
+  margin-inline-end: 17vw;
+}
+
 a#navtext2{  /*The contact link style stuff*/
   font-size: 3vi;
   text-decoration: none;
@@ -163,15 +172,6 @@ td{
   color: black;
   margin-inline-start: 9.5vw;
   margin-inline-end: 9.5vw;
-}
-
-#navtext2{
-  font-size: 3vi;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  color: black;
-  margin-inline-start: 17vw;
-  margin-inline-end: 17vw;
 }
 
 a#navtext3:hover{ /*Change text color on hover*/
