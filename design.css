@@ -114,7 +114,7 @@ li{
 display:inline-flex;
 }
 
-a#contact{  /*The contact link style stuff*/
+a#navtext2{  /*The contact link style stuff*/
   font-size: 3vi;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
@@ -123,13 +123,9 @@ a#contact{  /*The contact link style stuff*/
   margin-inline-end: 18vw;
 }
 
-a#contact:hover{ /*Change text color on hover*/
+a#navtext2:hover{ /*Change text color on hover*/
   transition: ease-in-out 200ms;
   color:white;
-}
-
-a#contact:visited{ /*Change text color after visited*/
-  color: white;
 }
 
 hr{
