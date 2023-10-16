@@ -114,10 +114,6 @@ li{
 display:inline-flex;
 }
 
-
-a#contact{  /*The contact link style stuff*/
-  font-size: 2em;
-  
 a#navtext2{  /*The contact link style stuff*/
   font-size: 2em;
   text-decoration: none;
@@ -232,4 +228,4 @@ ul.special{
 
 #mapbody{
   font-size: .7em;
-}
+} 
