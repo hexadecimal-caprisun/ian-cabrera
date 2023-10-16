@@ -37,7 +37,7 @@ h1 {
 
 h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 3vi;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -60,7 +60,7 @@ p {
 
 .contact-container{ /*The footer container for contact*/
   width: 100%;
-  height: 30vh;
+  height: auto;
   background-color: #226c70;
   display: inline-block;
   margin-top: 30px;
@@ -114,17 +114,12 @@ li{
 display:inline-flex;
 }
 
-#navtext2{
-  font-size: 3vi;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  color: black;
-  margin-inline-start: 17vw;
-  margin-inline-end: 17vw;
-}
 
+a#contact{  /*The contact link style stuff*/
+  font-size: 2em;
+  
 a#navtext2{  /*The contact link style stuff*/
-  font-size: 3vi;
+  font-size: 2em;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: black;
@@ -229,4 +224,12 @@ background-color: greenyellow;
 ul.special{
   all: initial;
   font-family: "Poppins", sans-serif;
+}
+
+#maphead{
+  font-size: 1em;
+}
+
+#mapbody{
+  font-size: .7em;
 }
