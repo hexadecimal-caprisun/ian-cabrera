@@ -239,7 +239,7 @@ ul.special{
 
 @media only screen and (max-width: 768px) {
   #navtext3{
-    font-size: 1.5vi;
+    font-size: 3vi;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     color: black;
@@ -248,7 +248,7 @@ ul.special{
   }
   
   a#navtext2{  /*The contact link style stuff*/
-    font-size: 1.5vi;
+    font-size: 3vi;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     color: black;
