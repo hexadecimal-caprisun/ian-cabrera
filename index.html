@@ -123,13 +123,16 @@
           </table>
           <div id='map' style='width: 100%; height: 60vh; top: 3vh; border-radius: 25px'></div>
           <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoiaWFuamNjIiwiYSI6ImNsbnQxcmpiMzFlN3Ayam1ydnN1a25iY2sifQ.P0FFqedijx423EF33J3jCQ';
+            mapboxgl.accessToken = 'pk.eyJ1IjoiaWFuamNjIiwiYSI6ImNsbnQxZ2tiejFncmsybHBqeHA1MGw3cXoifQ.UfbDLttRj0wBS1KDE2hQ6g';
             var map = new mapboxgl.Map({
               container: 'map',
-              style: 'mapbox://styles/mapbox/streets-v12',
+              style: 'mapbox://styles/ianjcc/clnuc2gn000g201p51h7udixo',
               center: [-96, 37.8],
               zoom: 2
             });
+
+            // Add zoom and rotation controls to the map.
+            map.addControl(new mapboxgl.NavigationControl());
 
             // create the Popup
             const pbauPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw"  })
