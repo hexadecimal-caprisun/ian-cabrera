@@ -239,11 +239,11 @@ ul.special{
 
 @media only screen and (max-width: 768px) {
   #maphead{
-    font-size: 2em;
+    font-size: 3em;
   }
   
   #mapbody{
-    font-size: 1em;
+    font-size: 2em;
   } 
 
   #map{
