@@ -236,7 +236,7 @@ ul.special{
 #mapbody{
   font-size: .7em;
 } 
-
+/*
 @media only screen and (max-width: 768px) {
   #maphead{
     font-size: 3em;
@@ -254,3 +254,4 @@ ul.special{
     border-radius: 25px
   }
 }
+*/
