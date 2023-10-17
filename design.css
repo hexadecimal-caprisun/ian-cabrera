@@ -115,7 +115,7 @@ display:inline-flex;
 }
 
 a#navtext2{  /*The contact link style stuff*/
-  font-size: 2em;
+  font-size: 3vi;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: black;
