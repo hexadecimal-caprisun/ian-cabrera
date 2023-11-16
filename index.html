@@ -120,6 +120,14 @@
               <td class="column" id="rmu">Robert Morris University</td>
               <td class="column" id="accepted">Accepted</td>
             </tr>
+            <tr>
+              <td class="column" id="nyit">New York Institute of Technology</td>
+              <td class="column" id="accepted">Accepted</td>
+            </tr>
+            <tr>
+              <td class="column" id="fply">Florida Polytechnic University</td>
+              <td class="column" id="accepted">Accepted</td>
+            </tr>
           </table>
           <div id='map'></div>
           <script>
@@ -160,6 +168,16 @@
               '<h3 id="maphead" style="text-align: center;">Robert Morris University</h3><p id="mapbody"><b>Robert Morris University (RMU) is a private university in Moon Township, Pennsylvania. It was founded in 1921 and is named after Robert Morris, known as the "financier of the American revolution." It enrolls nearly 5,000 students and offers 60 bachelor\'s degree programs and 35 master\'s and doctoral programs. <br> - Wikipedia</b></p>'
             )
 
+            const nyitPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw" })
+            .setHTML(
+              '<h3 id="maphead" style="text-align: center;">New York Institute of Technology</h3><p id="mapbody"><b>The New York Institute of Technology is a private research university founded in 1955. It has two main campuses in New York—one in Old Westbury, on Long Island, and one in Manhattan. Additionally, it has a cybersecurity research lab and a biosciences, bioengineering lab in Old Westbury, as well as campuses in Arkansas, China, and Canada. The U.S. Department of Defense and the U.S. Department of Homeland Security designated NYIT as a National Center of Academic Excellence in Cyber Defense Education.<br> - Wikipedia</b></p>'
+            )
+
+            const fplyPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw" })
+            .setHTML(
+              '<h3 id="maphead" style="text-align: center;">Florida Polytechnic University</h3><p id="mapbody"><b>Florida Polytechnic University (Florida Poly) is a public university in Lakeland, Florida. Created as an independent university in 2012, it is the newest of the 12 institutions in the State University System of Florida. It is the state\'s only public polytechnic university, and focuses solely on STEM education.<br> - Wikipedia</b></p>'
+            )
+
 
             //create marker
             const pbauMarker = new mapboxgl.Marker()
@@ -185,6 +203,16 @@
             const rmuMarker = new mapboxgl.Marker()
             .setLngLat([-80.215292, 40.5213461]) //Sets marker location
             .setPopup(rmuPopup)  //Ties popup to marker
+            .addTo(map);
+
+            const nyitMarker = new mapboxgl.Marker()
+            .setLngLat([-74.270809, 40.7695555]) //Sets marker location, lat long
+            .setPopup(nyitPopup)  //Ties popup to marker
+            .addTo(map);
+
+            const fplyMarker = new mapboxgl.Marker()
+            .setLngLat([-81.8509294, 28.1480016]) //Sets marker location
+            .setPopup(fplyPopup)  //Ties popup to marker
             .addTo(map);
           </script>
         </div>
