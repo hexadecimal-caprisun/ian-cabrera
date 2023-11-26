@@ -101,10 +101,6 @@
               <th class="column">Status</th>
             </tr>
             <tr>
-              <td class="column" id="pbau">Palm Beach Atlantic University</td>
-              <td class="column" id="accepted">Accepted</td>
-            </tr>
-            <tr>
               <td class="column" id="erau">Embry-Riddle Aeronautical University</td>
               <td class="column" id="accepted">Accepted</td>
             </tr>
@@ -143,11 +139,6 @@
             map.addControl(new mapboxgl.NavigationControl());
 
             // create the Popup
-            const pbauPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw"  })
-            .setHTML(
-              '<h3 id="maphead" style="text-align: center;">Palm Beach Atlantic University</h3><p id="mapbody"><b>Palm Beach Atlantic University is a private Christian university in West Palm Beach, Florida. The university\'s nine colleges focus on the liberal arts with a select collection of professional studies. <br>- Wikipedia</b></p>'
-            )
-
             const erauPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw"  })
             .setHTML(
               '<h3 id="maphead" style="text-align: center;">Embry-Riddle Aeronautical University</h3><p id="mapbody"><b>Embry–Riddle Aeronautical University is a private university focused on aviation and aerospace programs. Initially founded at Lunken Field in Cincinnati, Ohio in 1926, its main campuses are located in Daytona Beach, Florida, and Prescott, Arizona. It is the largest accredited university system specializing in aviation and aerospace. <br>- Wikipedia</b></p>'
@@ -180,11 +171,6 @@
 
 
             //create marker
-            const pbauMarker = new mapboxgl.Marker()
-            .setLngLat([-80.0504326056405, 26.704890943214018]) //Sets marker location
-            .setPopup(pbauPopup)  //Ties popup to marker
-            .addTo(map);
-
             const erauMarker = new mapboxgl.Marker()
             .setLngLat([-81.0526838, 29.1917102]) //Sets marker location
             .setPopup(erauPopup)  //Ties popup to marker
