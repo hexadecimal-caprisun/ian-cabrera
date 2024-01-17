@@ -124,6 +124,18 @@
               <td class="column" id="fply">Florida Polytechnic University</td>
               <td class="column" id="accepted">Accepted</td>
             </tr>
+            <tr>
+              <td class="column" id="usf">University of South Florida</td>
+              <td class="column" id="accepted">Accepted</td>
+            </tr>
+            <tr>
+              <td class="column" id="uchi">University of Chicago</td>
+              <td class="column" id="deferred">Deferred</td>
+            </tr>
+            <tr>
+              <td class="column" id="cwru">Case Western Reserve University</td>
+              <td class="column" id="deferred">Deferred</td>
+            </tr>
           </table>
           <div id='map'></div>
           <script>
@@ -169,6 +181,20 @@
               '<h3 id="maphead" style="text-align: center;">Florida Polytechnic University</h3><p id="mapbody"><b>Florida Polytechnic University (Florida Poly) is a public university in Lakeland, Florida. Created as an independent university in 2012, it is the newest of the 12 institutions in the State University System of Florida. It is the state\'s only public polytechnic university, and focuses solely on STEM education.<br> - Wikipedia</b></p>'
             )
 
+            const usfPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw" })
+            .setHTML(
+              '<h3 id="maphead" style="text-align: center;">University of South Florida</h3><p id="mapbody"><b>The University of South Florida (USF) is a public research university with its main campus located in Tampa, Florida, and other campuses in St. Petersburg and Sarasota. It is one of 12 members of the State University System of Florida. USF is home to 14 colleges, offering more than 240 undergraduate, graduate, specialist, and doctoral-level degree programs.<br> - Wikipedia</b></p>'
+            )
+
+            const uchiPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw" })
+            .setHTML(
+              '<h3 id="maphead" style="text-align: center;">University of Chicago</h3><p id="mapbody"><b><br>The University of Chicago is a private research university in Chicago, Illinois, United States. The university is composed of an undergraduate college and four graduate research divisions, which contain all of the university\'s graduate programs and interdisciplinary committees. It has eight professional schools: the Law School; the Booth School of Business; the Pritzker School of Medicine; the Crown Family School of Social Work, Policy, and Practice; the Harris School of Public Policy; the Divinity School; the Graham School of Continuing Liberal and Professional Studies; and the Pritzker School of Molecular Engineering. - Wikipedia</b></p>'
+            )
+
+            const cwruPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw" })
+            .setHTML(
+              '<h3 id="maphead" style="text-align: center;">Case Western Reserve University</h3><p id="mapbody"><b><br>Case Western Reserve University (CWRU) is a private research university in Cleveland, Ohio. Case Western Reserve was established after Western Reserve University—which was founded in 1826 and named for its location in the Connecticut Western Reserve—and Case Institute of Technology—which was founded in 1880 through the endowment of Leonard Case Jr.—formally federated in 1967. - Wikipedia</b></p>'
+            )
 
             //create marker
             const erauMarker = new mapboxgl.Marker()
@@ -199,6 +225,21 @@
             const fplyMarker = new mapboxgl.Marker()
             .setLngLat([-81.8509294, 28.1480016]) //Sets marker location
             .setPopup(fplyPopup)  //Ties popup to marker
+            .addTo(map);
+
+            const usfMarker = new mapboxgl.Marker()
+            .setLngLat([-82.4164288, 28.0587031]) //Sets marker location
+            .setPopup(usfPopup)  //Ties popup to marker
+            .addTo(map);
+
+            const uchiMarker = new mapboxgl.Marker()
+            .setLngLat([-87.604184, 41.7911775]) //Sets marker location
+            .setPopup(uchiPopup)  //Ties popup to marker
+            .addTo(map);
+
+            const cwruMarker = new mapboxgl.Marker()
+            .setLngLat([-81.6924949, 41.485549]) //Sets marker location
+            .setPopup(cwruPopup)  //Ties popup to marker
             .addTo(map);
           </script>
         </div>

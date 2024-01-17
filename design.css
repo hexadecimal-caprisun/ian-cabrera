@@ -184,7 +184,15 @@ a#navtext3:hover{ /*Change text color on hover*/
 }
 
 #accepted{
-background-color: greenyellow;
+  background-color: greenyellow;
+}
+
+#deferred{
+  background-color: orange;
+}
+
+#denied{
+  background-color: red;
 }
 
 #erau{
@@ -215,6 +223,21 @@ background-color: greenyellow;
 #fply{
   background-color: #532d8e;
   color: #fff;
+}
+
+#usf{
+  background-color: #006747;
+  color: #CFC493;
+}
+
+#uchi{
+  background-color: #800000;
+  color: #a6a6a6;
+}
+
+#cwru{
+  background-color: #003071;
+  color: #D3D3D3;
 }
 
 #tabel{
