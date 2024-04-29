@@ -21,13 +21,10 @@
         <div class="nav-container">
           <ul> <!-- Navbar that jumps to different part of page when clicked -->
             <li>
-              <a href="#projects" id="navtext3">Projects</a>
+              <a href="#projects" id="navtext2">Projects</a>
             </li>
             <li>
-              <a href="#college" id="navtext3">College</a>
-            </li>
-            <li>
-              <a href="blog.html" id="navtext3">Blog</a>
+              <a href="#certs" id="navtext2">Certs</a>
             </li>
           </ul>
         </div>
@@ -36,19 +33,20 @@
           <h2>About Me</h2>
           <p>
             As I'm sure you've just seen, my name is Ian. I'm a student,
-            currently studying Procedural Programming. Feel free to
-            explore the other pages. As I make more projects I will put them
-            here, along with links to my socials and other forms of contact.
+            studying Computer Science as a member of the UCF Burnett Honors College C/O 2028.
           </p>
+          <img style="width: 30vw; padding-left: 35vw; padding-bottom: 5vh;"
+          src="images/UILexternal_KGrgb_Burnett-Honors-College-300dpi.png"
+          />
         </div>
         <!-- *PROJECTS* -->
         <hr>
         <div id="projects">
           <h2>Projects</h2>
           <p>
-            Here's all the projects I've completed so far! Clicking on the image
-            will lead you directly to the site, and clicking on the github logo
-            on that site will lead you to the source code on github.
+            Here's a sample of some of the projects I've completed so far! Clicking on the image
+            will lead you directly to the site, and clicking on the GitHub logo
+            on that site will lead you to the source code on GitHub.
           </p>
           <!-- Boxes w the projects and stuff -->
           <div class="container">
@@ -86,162 +84,13 @@
           </div>
         </div>
         <hr>
-        <!-- *COLLEGE STUFF* -->
-        <div id="college">
-          <h2> College </h2>
-          <p>
-            Being a Senior in highschool, I now need to worry about college applications! I am
-            applying to several schools and as I recieve acceptances, I will update them on this 
-            site. I will also update for my rejections, which mean I am less than worthless, and
-            deserve nothing but <b>pain </b>and <b>suffering</b>. Click a school name to get more info about it!
-          </p>
-          <table>  <!-- Organize college stuff w table -->
-            <tr>
-              <th class="column" >College</th>
-              <th class="column">Status</th>
-            </tr>
-            <tr>
-              <td class="column" id="erau">Embry-Riddle Aeronautical University</td>
-              <td class="column" id="accepted">Accepted</td>
-            </tr>
-            <tr>
-              <td class="column" id="ucf">University of Central Florida</td>
-              <td class="column" id="accepted">Accepted</td>
-            </tr>
-            <tr>
-              <td class="column" id="mtu">Michigan Technological University</td>
-              <td class="column" id="accepted">Accepted</td>
-            </tr>
-            <tr>
-              <td class="column" id="rmu">Robert Morris University</td>
-              <td class="column" id="accepted">Accepted</td>
-            </tr>
-            <tr>
-              <td class="column" id="nyit">New York Institute of Technology</td>
-              <td class="column" id="accepted">Accepted</td>
-            </tr>
-            <tr>
-              <td class="column" id="fply">Florida Polytechnic University</td>
-              <td class="column" id="accepted">Accepted</td>
-            </tr>
-            <tr>
-              <td class="column" id="usf">University of South Florida</td>
-              <td class="column" id="accepted">Accepted</td>
-            </tr>
-            <tr>
-              <td class="column" id="uchi">University of Chicago</td>
-              <td class="column" id="deferred">Deferred</td>
-            </tr>
-            <tr>
-              <td class="column" id="cwru">Case Western Reserve University</td>
-              <td class="column" id="deferred">Deferred</td>
-            </tr>
-          </table>
-          <div id='map'></div>
-          <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoiaWFuamNjIiwiYSI6ImNsbnQxZ2tiejFncmsybHBqeHA1MGw3cXoifQ.UfbDLttRj0wBS1KDE2hQ6g';
-            var map = new mapboxgl.Map({
-              container: 'map',
-              style: 'mapbox://styles/ianjcc/clnuc2gn000g201p51h7udixo',
-              center: [-96, 37.8],
-              zoom: 2
-            });
-
-            // Add zoom and rotation controls to the map.
-            map.addControl(new mapboxgl.NavigationControl());
-
-            // create the Popup
-            const erauPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw"  })
-            .setHTML(
-              '<h3 id="maphead" style="text-align: center;">Embry-Riddle Aeronautical University</h3><p id="mapbody"><b>Embry–Riddle Aeronautical University is a private university focused on aviation and aerospace programs. Initially founded at Lunken Field in Cincinnati, Ohio in 1926, its main campuses are located in Daytona Beach, Florida, and Prescott, Arizona. It is the largest accredited university system specializing in aviation and aerospace. <br>- Wikipedia</b></p>'
-            )
-            
-            const ucfPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw" })
-            .setHTML(
-              '<h3 id="maphead" style="text-align: center;">University of Central Florida</h3><p id="mapbody"><b>The University of Central Florida (UCF) is a public research university with its main campus in Orange County, Florida. With 68,442 students as of the fall 2022 semester, UCF has the second-largest on-campus student body of any public university in the United States. UCF is classified among "R1: Doctoral Universities – Very high research activity" and is accredited by the Commission on Colleges of the Southern Association of Colleges and Schools <br> - Wikipedia</b></p>'
-            )
-
-            const mtuPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw" })
-            .setHTML(
-              '<h3 id="maphead" style="text-align: center;">Michigan Technological University</h3><p id="mapbody"><b>Michigan Technological University is a public research university in Houghton, Michigan, founded in 1885 as the Michigan Mining School, the first post-secondary institution in the Upper Peninsula of Michigan. <br> - Wikipedia</b></p>'
-            )
-
-            const rmuPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw" })
-            .setHTML(
-              '<h3 id="maphead" style="text-align: center;">Robert Morris University</h3><p id="mapbody"><b>Robert Morris University (RMU) is a private university in Moon Township, Pennsylvania. It was founded in 1921 and is named after Robert Morris, known as the "financier of the American revolution." It enrolls nearly 5,000 students and offers 60 bachelor\'s degree programs and 35 master\'s and doctoral programs. <br> - Wikipedia</b></p>'
-            )
-
-            const nyitPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw" })
-            .setHTML(
-              '<h3 id="maphead" style="text-align: center;">New York Institute of Technology</h3><p id="mapbody"><b>The New York Institute of Technology is a private research university founded in 1955. It has two main campuses in New York—one in Old Westbury, on Long Island, and one in Manhattan. Additionally, it has a cybersecurity research lab and a biosciences, bioengineering lab in Old Westbury, as well as campuses in Arkansas, China, and Canada. The U.S. Department of Defense and the U.S. Department of Homeland Security designated NYIT as a National Center of Academic Excellence in Cyber Defense Education.<br> - Wikipedia</b></p>'
-            )
-
-            const fplyPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw" })
-            .setHTML(
-              '<h3 id="maphead" style="text-align: center;">Florida Polytechnic University</h3><p id="mapbody"><b>Florida Polytechnic University (Florida Poly) is a public university in Lakeland, Florida. Created as an independent university in 2012, it is the newest of the 12 institutions in the State University System of Florida. It is the state\'s only public polytechnic university, and focuses solely on STEM education.<br> - Wikipedia</b></p>'
-            )
-
-            const usfPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw" })
-            .setHTML(
-              '<h3 id="maphead" style="text-align: center;">University of South Florida</h3><p id="mapbody"><b>The University of South Florida (USF) is a public research university with its main campus located in Tampa, Florida, and other campuses in St. Petersburg and Sarasota. It is one of 12 members of the State University System of Florida. USF is home to 14 colleges, offering more than 240 undergraduate, graduate, specialist, and doctoral-level degree programs.<br> - Wikipedia</b></p>'
-            )
-
-            const uchiPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw" })
-            .setHTML(
-              '<h3 id="maphead" style="text-align: center;">University of Chicago</h3><p id="mapbody"><b><br>The University of Chicago is a private research university in Chicago, Illinois, United States. The university is composed of an undergraduate college and four graduate research divisions, which contain all of the university\'s graduate programs and interdisciplinary committees. It has eight professional schools: the Law School; the Booth School of Business; the Pritzker School of Medicine; the Crown Family School of Social Work, Policy, and Practice; the Harris School of Public Policy; the Divinity School; the Graham School of Continuing Liberal and Professional Studies; and the Pritzker School of Molecular Engineering. - Wikipedia</b></p>'
-            )
-
-            const cwruPopup = new mapboxgl.Popup({ offset: [0,-5], maxWidth: "50vw" })
-            .setHTML(
-              '<h3 id="maphead" style="text-align: center;">Case Western Reserve University</h3><p id="mapbody"><b><br>Case Western Reserve University (CWRU) is a private research university in Cleveland, Ohio. Case Western Reserve was established after Western Reserve University—which was founded in 1826 and named for its location in the Connecticut Western Reserve—and Case Institute of Technology—which was founded in 1880 through the endowment of Leonard Case Jr.—formally federated in 1967. - Wikipedia</b></p>'
-            )
-
-            //create marker
-            const erauMarker = new mapboxgl.Marker()
-            .setLngLat([-81.0526838, 29.1917102]) //Sets marker location
-            .setPopup(erauPopup)  //Ties popup to marker
-            .addTo(map);
-
-            const ucfMarker = new mapboxgl.Marker()
-            .setLngLat([-81.2026348, 28.6024274]) //Sets marker location
-            .setPopup(ucfPopup)  //Ties popup to marker
-            .addTo(map);
-
-            const mtuMarker = new mapboxgl.Marker()
-            .setLngLat([-88.5477753, 47.115026]) //Sets marker location
-            .setPopup(mtuPopup)  //Ties popup to marker
-            .addTo(map);
-
-            const rmuMarker = new mapboxgl.Marker()
-            .setLngLat([-80.215292, 40.5213461]) //Sets marker location
-            .setPopup(rmuPopup)  //Ties popup to marker
-            .addTo(map);
-
-            const nyitMarker = new mapboxgl.Marker()
-            .setLngLat([-74.270809, 40.7695555]) //Sets marker location, lat long
-            .setPopup(nyitPopup)  //Ties popup to marker
-            .addTo(map);
-
-            const fplyMarker = new mapboxgl.Marker()
-            .setLngLat([-81.8509294, 28.1480016]) //Sets marker location
-            .setPopup(fplyPopup)  //Ties popup to marker
-            .addTo(map);
-
-            const usfMarker = new mapboxgl.Marker()
-            .setLngLat([-82.4164288, 28.0587031]) //Sets marker location
-            .setPopup(usfPopup)  //Ties popup to marker
-            .addTo(map);
-
-            const uchiMarker = new mapboxgl.Marker()
-            .setLngLat([-87.604184, 41.7911775]) //Sets marker location
-            .setPopup(uchiPopup)  //Ties popup to marker
-            .addTo(map);
-
-            const cwruMarker = new mapboxgl.Marker()
-            .setLngLat([-81.6924949, 41.485549]) //Sets marker location
-            .setPopup(cwruPopup)  //Ties popup to marker
-            .addTo(map);
-          </script>
+        <!-- *CERTS* -->
+        <div id="certs">
+          <h2>Certifications</h2>
+          <p>Over the past several years, I have dedicated countless hours to getting to a level of competency in several subjects</p>
+          <div id="certimages">
+            <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="5b799de8-47b3-437f-a494-06233250f27b" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+          </div>
         </div>
         <!-- *CONTACT* -->
         <footer class="contact">
