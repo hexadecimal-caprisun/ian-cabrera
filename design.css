@@ -76,7 +76,7 @@ p {
   width: 100%;
   height: auto;
   background-color: #226c70;
-  display: inline-block;
+  display: inline-flex;
   top: 0;
   margin-bottom: 30px;
   border-bottom-left-radius: 25px;
@@ -120,8 +120,8 @@ a#navtext2{  /*The contact link style stuff*/
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: black;
-  margin-inline-start: 18vw;
-  margin-inline-end: 18vw;
+  margin-inline-start: 17vw;
+  margin-inline-end: 17vw;
 }
 
 a#navtext2:hover{ /*Change text color on hover*/
@@ -172,18 +172,17 @@ ul.special{
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: black;
-  margin-inline-start: 9.5vw;
-  margin-inline-end: 9.5vw;
+  margin-inline-start: 8vw;
+  margin-inline-end: 8vw;
 }
-
+/*
 @media only screen and (max-width: 768px) {
-  a#navtext2{  /*The contact link style stuff*/
-    font-size: 5vi;
+  a#navtext2{
+    font-size: 3vi;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     color: black;
-    margin-inline-start: 18vw;
-    margin-inline-end: 18vw;
+    margin-inline: 16vw;
   }
 
   #navtext3{
@@ -191,7 +190,7 @@ ul.special{
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     color: black;
-    margin-inline-start: 9.5vw;
-    margin-inline-end: 9.5vw;
+    margin-inline: 8vw;
   }
 }
+*/
