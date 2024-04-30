@@ -175,22 +175,14 @@ ul.special{
   margin-inline-start: 8vw;
   margin-inline-end: 8vw;
 }
-/*
+
 @media only screen and (max-width: 768px) {
   a#navtext2{
     font-size: 3vi;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     color: black;
-    margin-inline: 16vw;
-  }
-
-  #navtext3{
-    font-size: 3vi;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    color: black;
-    margin-inline: 8vw;
+    margin-inline-start: 15vw;
+    margin-inline-end: 15vw;
   }
 }
-*/
