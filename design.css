@@ -168,7 +168,7 @@ ul.special{
 }
 
 #navtext3{
-  font-size: 3em;
+  font-size: 3vi;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: black;
@@ -184,5 +184,14 @@ ul.special{
     color: black;
     margin-inline-start: 18vw;
     margin-inline-end: 18vw;
+  }
+
+  #navtext3{
+    font-size: 3vi;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    margin-inline-start: 9.5vw;
+    margin-inline-end: 9.5vw;
   }
 }
