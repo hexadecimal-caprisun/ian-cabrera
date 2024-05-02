@@ -18,9 +18,39 @@
 }
 
 /* Styling */
+
+.css-selector {
+  background: linear-gradient(165deg, #c9e5e7, #a16dd3, #3c8386);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 40s ease infinite;
+  -moz-animation: AnimationName 40s ease infinite;
+  animation: AnimationName 40s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:76% 0%}
+  50%{background-position:25% 100%}
+  100%{background-position:76% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:76% 0%}
+  50%{background-position:25% 100%}
+  100%{background-position:76% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:76% 0%}
+  50%{background-position:25% 100%}
+  100%{background-position:76% 0%}
+}
+
+/*
+Credit to Ian Forrest for the above code, thank you from one Ian to another
+CSS Generator - https://www.gradient-animator.com/
+Forrest's Personal Website - https://www.ianforrest.me/
+*/
+
 html {
-  background-image: linear-gradient(#5f9da0, white);
-  background-repeat: no-repeat;
   scroll-behavior: smooth;
 }
 
