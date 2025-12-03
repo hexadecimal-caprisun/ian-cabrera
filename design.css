@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
   background-color: #819595;
+  overflow-x: hidden;
 }
 
 body{
@@ -15,7 +16,7 @@ body{
 
 h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 6vi;
+  font-size: 6em;
   text-align: center;
 }
 
@@ -53,9 +54,9 @@ p {
   bottom: 0;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: visible;
   text-align: center;
+  justify-content: center;
 }
 
 .nav-container{ /*The top container for navigation*/
@@ -72,6 +73,7 @@ p {
   position: sticky;
   overflow-x: hidden;
   text-align: center;
+  justify-content: center;
 }
 
 
@@ -104,17 +106,40 @@ li{
 display:inline-flex;
 }
 
+#portlinks{
+  text-decoration: none; 
+  font-family: "Poppins", sans-serif;
+  color:black;
+  transition: ease-in-out 200ms;
+}
+
+#portlinks:hover{ /*Change text color on hover*/
+  color: white;
+}
+
 a#navtext2{  /*The contact link style stuff*/
   font-size: 3vi;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: white;
+  transition: ease-in-out 200ms;
   margin-inline-start: 17vw;
   margin-inline-end: 17vw;
 }
 
-a#navtext2:hover{ /*Change text color on hover*/
+a#navtext1{  /*The portfolio link style stuff*/
+  font-size: 4.1vi;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
   transition: ease-in-out 200ms;
+}
+
+a#navtext1:hover{ /*Change text color on hover*/
+  color: gray;
+}
+
+a#navtext2:hover{ /*Change text color on hover*/
   color: gray;
 }
 
@@ -161,12 +186,12 @@ ul.special{
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   color: white;
+  transition: ease-in-out 200ms;
   margin-inline-start: 8vw;
   margin-inline-end: 8vw;
 }
 
 a#navtext3:hover{ /*Change text color on hover*/
-  transition: ease-in-out 200ms;
   color: gray;
 }
 
